@@ -1,25 +1,10 @@
-#include "main.h"
-/**
- * print_rev - imprime en reversa
- * @s: string
- * return: 0
- */
-void print_rev(char *s)
+#include "holberton.h"
+
+int main(void)
 {
-	int longi = 0;
-	int o;
+	char *str;
 
-	while (*s != '\0')
-	{
-		longi++;
-		s++;
-	}
-	s--;
-	for (o = longi; o > 0; o--)
-	{
-		_putchar(*s);
-		s--;
-	}
-
-	_putchar('\n');
+	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+	print_rev(str);
+	return (0);
 }

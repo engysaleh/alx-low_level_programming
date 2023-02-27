@@ -1,13 +1,11 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main - check the code
- * print_rev -> printing a string in reverse
- * @s: the string to be printed in rev
- */
+* print_rev -> printing a string in reverse
+* @s: the string to be printed in rev
+*/
 
-	void print_rev(char *s)
+void print_rev(char *s)
 {
 	int i, n;
 

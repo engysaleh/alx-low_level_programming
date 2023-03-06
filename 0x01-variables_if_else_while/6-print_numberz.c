@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -7,19 +7,14 @@
  *              while using int variable
  *
  * Return: Always 0 (Success)
-*/
+ */
 
 int main(void)
 {
-	int digit = 0;
+	int x;
 
-	while (digit <= 9)
-	{
-		/*convert digit to ASCII representation*/
-		putchar(digit + '0');
-		++digit;
-	}
-	putchar('\n');
-
+	for (x = 0 ; x < 10 ; x++)
+		putchar(x + "0");
+	putchar("\n");
 	return (0);
 }

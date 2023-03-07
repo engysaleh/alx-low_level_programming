@@ -1,9 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * set_string - Sets the value of a pointer to a char.
- * @s: The pointer.
- * @to: The char.
+ * set_string - sets the value of a pointer to a char
+ * @s: pointer to pointer we need to set to
+ * @to: string to set
  */
 void set_string(char **s, char *to)
 {

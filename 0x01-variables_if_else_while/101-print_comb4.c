@@ -24,8 +24,8 @@ int main(void)
 				putchar(z + '0');
 					if (x + y + z != 24)
 					{
-					putchar(' ');
 					putchar(',');
+					putchar(' ');
 					}
 				}
 			}

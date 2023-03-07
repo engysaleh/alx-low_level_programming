@@ -6,25 +6,27 @@
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
-	int digit1, digit2;
+	int x, y;
 
-	for (digit1 = 0; digit1 < 9; digit1++)
+	for (x = 0 ; x <= 9 ; x++)
 	{
-		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
+		for (y = 0 ; y <= 9 ; y++)
 		{
-			putchar((digit1 % 10) + '0');
-			putchar((digit2 % 10) + '0');
-
-			if (digit1 == 8 && digit2 == 9)
-				continue;
-			putchar(',');
-			putchar(' ');
+			if (x < y && x != y)
+			{
+				putchar(x + '0');
+				putchar(y + '0');
+					if (x + y != 17)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+			}
 		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }

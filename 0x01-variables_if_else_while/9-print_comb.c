@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -6,25 +6,21 @@
  * Description: print 0, 1, - 9
  *
  * Return: Always 0 (Success)
-*/
+ */
 
 int main(void)
 {
-	int digit = 0;
+	int x;
 
-	while (digit <= 9)
+	for (x = 0 ; x <= 9 ; x++)
 	{
-		putchar(digit + 48);
-
-		if (digit != 9)
+		putchar(x + '0');
+		if (x != 9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
-
-		++digit;
 	}
 	putchar('\n');
-
 	return (0);
 }

@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /*
- * main - Entry point
+ * main - prints assign of n
  *
- * Description: print value of n satus; zero, positive or negative
+ * Description : This program will assign a random number to the variable n
  *
  * Return (0)
  */

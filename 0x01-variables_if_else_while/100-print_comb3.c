@@ -1,30 +1,39 @@
 #include <stdio.h>
 
 /**
-* main - Print combinations of two digit numbers
-*
-* Return: Always 0 (Success)
-*/
+ * main - entry point
+ *
+ * Description: Write a program that prints
+ *  all possible different combinations of two digits.
+ *
+ *  Return: 0 (Success)
+ */
+
 int main(void)
 {
-  int tens;
-  int ones;
+	int digit1 = 0, digit2;
 
-  for (tens = 0; tens <= 9; tens++)
-    {
-      for (ones = tens + 1; ones <= 9; ones++)
+	while (digit1 <= 9)
 	{
-	  putchar(tens + '0');
-	  putchar(ones + '0');
+		digit2 = 0;
+		while (digit2 <= 9)
+		{
+			if (digit1 != digit2 && digit1 < digit2)
+			{
+				putchar(digit1 + 48);
+				putchar(digit2 + 48);
 
-	  if (tens < 8)
-	    {
-	      putchar(',');
-	      putchar(' ');
-	    }
+				if (digit1 + digit2 != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			digit2++;
+		}
+		digit1++;
 	}
-    }
-  putchar('\n');
+	putchar('\n');
 
-  return (0);
+	return (0);
 }

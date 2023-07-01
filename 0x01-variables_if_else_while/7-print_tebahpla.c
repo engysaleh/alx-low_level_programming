@@ -1,12 +1,12 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
  *
- * Description: print a-z in reverse
+ * Description: prints a-z in reverse
  *
  * Return: Always 0 (Success)
-*/
+ */
 
 int main(void)
 {
@@ -15,7 +15,7 @@ int main(void)
 	while (ch >= 'a')
 	{
 		putchar(ch);
-		--ch;
+		ch--;
 	}
 	putchar('\n');
 

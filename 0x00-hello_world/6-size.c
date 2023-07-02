@@ -22,4 +22,3 @@ int main(void)
 
 	return (0);
 }
- -o `echo $CFILE | cut -d. -f1`.s

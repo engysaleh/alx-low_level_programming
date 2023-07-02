@@ -6,7 +6,7 @@
  * Description: prints the last digit of a number
  * @j: takes the input number
  *
- * Return: the last digit (i) 
+ * Return: the last digit (i)
  */
 
 int print_last_digit(int j)

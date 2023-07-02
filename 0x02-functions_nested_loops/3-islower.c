@@ -3,9 +3,9 @@
 /**
  * _islower - Entry point
  *
- * Description: checks for c lowercase character
+ * Description: checks for 'c' lowercase character
  *
- * Return: returns 1 if `c` is lowercase otherwise always 0 (Success)
+ * Return: returns 1 if 'c' is lowercase otherwise always 0 (Success)
  */
 
 int _islower(int c)

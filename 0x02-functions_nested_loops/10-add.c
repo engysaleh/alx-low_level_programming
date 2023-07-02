@@ -4,6 +4,8 @@
  * add - Entry point
  *
  * Description: add two integers
+ * @a: The first number to be computed
+ * @b: The second number to be computed
  *
  * Return: sum
  */

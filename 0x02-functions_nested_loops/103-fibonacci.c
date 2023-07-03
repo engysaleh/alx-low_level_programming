@@ -1,11 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - Prints the sum of even-valued Fibonacci sequence
- *        terms not exceeding 4000000.
+ * main - Entry point
  *
- * Return: Always 0.
+ * Description: prints the sum of the even-valued terms
+ *
+ * Return: Always 0
  */
+
 int main(void)
 {
 	unsigned long fib1 = 0, fib2 = 1, fibsum;

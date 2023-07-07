@@ -32,6 +32,6 @@ int check_prime(int n, int othrn)
 
 	else if (othrn >= n && n >= 2)
 		return (1);
-
-	return (check_prime(n, othrn + 1));
+	else
+		return (check_prime(n, othrn + 1));
 }

@@ -1,6 +1,6 @@
 #include "main.h"
 
-int check_prime(int n, int i);
+int check_prime(int n, int othr);
 int is_prime_number(int n);
 
 /**

@@ -27,10 +27,12 @@ int is_prime_number(int n)
 
 int check_prime(int n, int othrn)
 {
-	if (n % othrn == 0 || othrn <= 1 || othrn > 1)
+	if (n <= 1)
 		return (0);
-	else if (othrn >= n && n >= 2)
+
+	if (n % othrn == 0 && othrn > 1)
+		return (0);
+
+	if ((n / othrn) < othrn)
 		return (1);
-	else
-		return (check_prime(n, othrn + 1));
 }

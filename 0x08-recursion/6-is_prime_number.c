@@ -36,5 +36,5 @@ int check_prime(int n, int othrn)
 	if ((n / othrn) < othrn)
 		return (1);
 
-	return (check_prime(n, i + 1));
+	return (check_prime(n, othrn + 1));
 }

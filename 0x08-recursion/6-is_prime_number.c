@@ -27,9 +27,8 @@ int is_prime_number(int n)
 
 int check_prime(int n, int othrn)
 {
-	if (n % othrn == 0 || othrn <= 1)
+	if (n % othrn == 0 || othrn <= 1 || othrn > 1)
 		return (0);
-
 	else if (othrn >= n && n >= 2)
 		return (1);
 	else
